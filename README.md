@@ -1,4 +1,4 @@
-
+npx create-next-app@latest --example "https://github.com/.../" [your-project-name]
 
 
 LAYOUT.tsx

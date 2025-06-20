@@ -1,26 +1,59 @@
+
+
+
 LAYOUT.tsx
 
-const josefin = Josefin_Sans({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
-  variable: "--font-josefin",
-});
+Font?
+
+title?
+description?
+keywords?
+author?
+image?=default_og.png (1200x630)
+url?
+
+favicon.ico=logo.png (192x192)
+
+?Logo=logo.png
+
+items = [{label: "",href:""},{label: "", Dropdown: [{label: "", href: "" },etc]}]
+
+?Login
+
+?Search
+
+?Notifications
+
+?CTASmall
+
+?CTA Horizontal
+
+?
+
+social = ["urls",""]
+
+?
+
+?Copywrite
+
 
 <Seo 1.0.0>
 
 <header>
- logo *
+ [logo]
  <NavBar 1.0.0>
  <MobileMenu 1.0.0>
- [login {Search,CTA,login,etc.}] *
+ [login]
+ [search]
+ [cta]
 </header>
 
 <footer>
- [cta] *
+ [cta]
  [leftbottom]
  <Social 1.0.0>
  [rightbottom] 
- copywrite *
+ [copywrite]
 </footer>
 
 HOME.tsx:

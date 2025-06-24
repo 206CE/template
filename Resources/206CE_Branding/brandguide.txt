@@ -1,0 +1,31 @@
+🌟 206CE Brand Guidelines
+
+🏷️ Logo
+- Always use the provided SVG for scalability
+- Minimum size: 100px wide in print / 50px online
+- Do not distort, rotate, or recolor without approval
+
+🎨 Color Palette
+
+| Usage        | Color Name     | HEX       | RGB             |
+|--------------|----------------|-----------|------------------|
+| Primary      | Solar Yellow   | #FFD700   | 255, 215, 0      |
+| Secondary    | Deep Navy      | #002B5B   | 0, 43, 91        |
+| Accent       | Bright Orange  | #FFA500   | 255, 165, 0      |
+| Neutral      | White          | #FFFFFF   | 255, 255, 255    |
+
+🔤 Typography
+- Primary Font: Montserrat / Inter (clean sans-serif)
+- Monospace Font: Fira Code / Source Code Pro
+
+🖼️ Visual Motifs
+- Binary code backgrounds
+- Hexagonal grids
+- Subtle number patterns (CE, 206, 316)
+- Starburst/sun icons
+
+🧾 Logo Usage Examples
+- Website header
+- Business card
+- Email signature
+- Social media profile & cover

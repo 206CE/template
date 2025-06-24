@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar";
 import MobileM from "./Components/MobileM";
 
 import Social from "./Components/Social";
+import Chat from "./Components/chat";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -49,6 +50,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Seo title="" description="" keywords="" author="" image="" url="" />
+        
         <header>
           {/*LOGO*/}
           <Navbar items={items} />
@@ -65,6 +67,7 @@ export default function RootLayout({
           <Social urls={social} />
           {/* Right Bottom */}
           {/* Copy Write */}
+          <Chat />
         </footer>
       </body>
     </html>

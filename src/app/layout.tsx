@@ -1,12 +1,20 @@
+'use client';
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import Seo from "./Components/Seo";
+import Logo from "./Components/logo";
 import Navbar from "./Components/Navbar";
 import MobileM from "./Components/MobileM";
 
+import HexCounter from './Components/HexCounter';
 import Social from "./Components/Social";
 import Chat from "./Components/chat";
+
+
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -21,7 +29,7 @@ const items = [
   { label: "Home", href: "/" },
   
   {
-    label: "Services/Products",
+    label: "What We Do",
     dropdown: [
       { label: "Web Development", href: "/services/web-development" },
       { label: "SEO", href: "/services/seo" },
@@ -47,28 +55,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  w-10/12 justify-items-center`}
       >
         <Seo title="" description="" keywords="" author="" image="" url="" />
-        
-        <header>
-          {/*LOGO*/}
+        <div className="bg-(--background)  bg-cover bg-fixed bg-center bg-no-repeat min-h-screen ">
+        {/* Remember to add /public/Doc_Back.png */}
+        <header className="flex flex-row text-(--primary) p-2 gap-5">
+          <Logo text="206-CE" imagePath="/Logo_ce.png" size={100} />
           <Navbar items={items} />
           <MobileM items={items} />
-          {/* Login */}
-          {/* Search */}
           {/* Notifications */}
           {/* CTA */}
         </header>
         {children}
         <footer>
           {/* CTA Horizontal */}
-          {/* Left Bottom */}
+          {/*<HexCounter /> FIX COUNTER*/}
           <Social urls={social} />
           {/* Right Bottom */}
           {/* Copy Write */}
           <Chat />
         </footer>
+        </div>
       </body>
     </html>
   );

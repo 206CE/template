@@ -1,28 +1,31 @@
-import Cards from "../Components/Cards";
+import Cards from "../Components/CardsN";
 
 const customers = [
   {
     id: 1,
     name: "Aurora Group South Africa",
-    title: "AuroraTax",
+    subName: "AuroraTax",
     imageUrl: "/logo1.png",
-    description: "Tax & Finance Consultants",
+    imageSize: 200,
+    description: ["Tax & Finance Consultants"],
     website: "https://www.auroratax.co.za",
   },
   {
     id: 2,
     name: "Per-Gratiam",
-    title: "Recovery & Wellness",
+    subName: "Recovery & Wellness",
     imageUrl: "/logo2.png",
-    description: "Counceling & Crisis Management",
+    imageSize: 200,
+    description: ["Counceling & Crisis Management"],
     website: "https://www.pergratiam.co.za",
   },{
     id: 3,
     name: "Play2Heal",
-    title: "Recovery & Wellness",
+    subName: "Recovery & Wellness",
     imageUrl: "/logo3.jpg",
-    description: "Child Therapists",
-    website: "https://www.pergratiam.co.za",
+    imageSize: 200,
+    description: ["Child Therapists"],
+    website: "https://www.play2heal.co.za",
   }
 ];
 
@@ -35,7 +38,7 @@ export default function Customers() {
         <p>
           We value our customers' feedback and strive to improve continuously.
         </p>
-        <Cards customers={customers} />
+        <Cards cards={customers} />
       </section>
     </div>
   );

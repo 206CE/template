@@ -1,4 +1,4 @@
-import Team from "../Components/Team";
+import Team from "../Components/old/Team";
 
 const team = [
   {

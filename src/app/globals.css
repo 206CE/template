@@ -12,27 +12,50 @@
 @theme {
   --font-geist-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-geist-mono: "SFMono-Regular", "SF Mono", "Menlo", "Ubuntu Mono", "Consolas", "Liberation Mono", monospace;
-  --background: #ffffff;
-  --foreground: #171717;
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-night: #0A0A0A;
-  --color-FaluRed: #8A2929;
-  --color-RISDBlue: #374CA9;
-  --color-sunglow: #FFD43B;
-  --background: #F9F8F5;       /*/ Soft Sand*/
-  --surface: #F1F3F6;          /*/ White Smoke*/
-  --primary: #2E2E2E;          /*/ Charcoal*/
-  --secondary: #6A737D;        /*/ Cool Gray*/
-  --accent-blue: #7FB3D5;           /*/ Ocean Mist*/
-  --accent-peach: #F6C28B;          /*/ Apricot Glow*/
-  --border: #DDE1E6;           /*/ Light Graphite*/
-  --success: #A1D6C0;          /*/ Jade Powder*/
-  --warning: #FFD77A;          /*/ Citrine Tint*/
   
+  /* === Backgrounds & Surfaces === */
+  --background: #0A0A10;           /* Deep Space Black */
+  --surface: #12121D;              /* Dark Steel Panel */
+  --glass-overlay: rgba(255, 255, 255, 0.05); /* Futuristic glass effect */
+
+  /* === Sun Core Colors === */
+  --sun-core: #FF3E3E;             /* Red-Hot Core */
+  --sun-inner-glow: #FF6B35;       /* Orange Plasma */
+  --sun-outer-glow: #FFD166;       /* Solar Flare Yellow */
+
+  /* === Solar Panels / Tech Colors === */
+  --tech-panel: #1C1C27;           /* Matte Black Alloy */
+  --tech-accent: #4F83CA;          /* High-Energy Blue */
+  --tech-hologram: #7DB9E8;        /* Holo-Cyan Glow */
+  --tech-wire: #F2E205;            /* Energy Conduit Gold */
+
+  /* === UI & Interactive Elements === */
+  --primary: #FFD166;              /* Main UI Highlight (Solar Yellow) */
+  --secondary: #4F83CA;            /* Secondary UI (Plasma Blue) */
+  --accent: #FF6B35;               /* Accent UI (Flame Orange) */
+  --success: #7ED321;              /* Green = System Stable */
+  --warning: #FFA700;              /* Warning / Caution Mode */
+  --error: #FF3B30;                /* Error / Critical Alert */
+
+  /* === Text & Foreground === */
+  --text-primary: #FFFFFF;
+  --text-secondary: #AAAAAA;
+  --text-muted: #666666;
+
+  /* === Hover States & Variants === */
+  --primary-hover: #E6B95C;
+  --secondary-hover: #3D6BC0;
+  --accent-hover: #E05A2C;
+
+  /* === Borders & Dividers === */
+  --border: rgba(255, 255, 255, 0.1);
+  --divider: rgba(255, 255, 255, 0.05);
+
+  /* === Glows & Effects === */
+  --glow-sun: rgba(255, 107, 53, 0.4);
+  --glow-tech: rgba(79, 131, 202, 0.3);
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {

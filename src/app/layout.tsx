@@ -1,19 +1,15 @@
-'use client';
+"use client";
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import Seo from "./Components/Seo";
-import Logo from "./Components/logo";
-import Navbar from "./Components/Navbar";
-import MobileM from "./Components/MobileM";
+import Logo from "./Components/Logo";
+import Navigation from "./Components/Navigation";
 
-import HexCounter from './Components/HexCounter';
+import HexCounter from "./Components/HexCounter";
 import Social from "./Components/Social";
-import Chat from "./Components/chat";
-
-
-
+import Chat from "./Components/Chat";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,24 +23,22 @@ const geistMono = Geist_Mono({
 
 const items = [
   { label: "Home", href: "/" },
-  
+
   {
-    label: "What We Do",
+    label: "Services",
     dropdown: [
       { label: "Web Development", href: "/services/web-development" },
-      { label: "SEO", href: "/services/seo" },
-      { label: "Content Creation", href: "/services/content-creation" },
+
     ],
-  },{ label:"About Us", href: "/about" },
-  { label: "Our Customers", href: "/customers" },
-  { label: "Contact Us", href: "/contact" },
+  },
+  { label: "About", href: "/about" },
+  { label: "Customers", href: "/customers" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const social = [
-  "https://twitter.com/yourprofile",
+    "https://linkedin.com/in/yourprofile",
   "https://facebook.com/yourprofile",
-  "https://instagram.com/yourprofile",
-  "https://linkedin.com/in/yourprofile",
 ];
 
 export default function RootLayout({
@@ -55,27 +49,41 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased  w-10/12 justify-items-center`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-(--background)`}
       >
-        <Seo title="" description="" keywords="" author="" image="" url="" />
+        <Seo
+          title="CE206 It Services"
+          description="Computing services"
+          keywords="Website Development, IT Support, IT Training"
+          author="Jaco Botha"
+          image=""
+          url=""
+        />
         <div className="bg-(--background)  bg-cover bg-fixed bg-center bg-no-repeat min-h-screen ">
-        {/* Remember to add /public/Doc_Back.png */}
-        <header className="flex flex-row text-(--primary) p-2 gap-5">
-          <Logo text="206-CE" imagePath="/Logo_ce.png" size={100} />
-          <Navbar items={items} />
-          <MobileM items={items} />
-          {/* Notifications */}
-          {/* CTA */}
-        </header>
-        {children}
-        <footer>
-          {/* CTA Horizontal */}
-          {/*<HexCounter /> FIX COUNTER*/}
-          <Social urls={social} />
-          {/* Right Bottom */}
-          {/* Copy Write */}
-          <Chat />
-        </footer>
+          {/* Remember to add /public/Doc_Back.png */}
+          <header className="flex flex-row text-(--text-primary) p-2 gap-5">
+            <Logo
+              text="CE 206"
+              imagePath="/Logo9.png"
+              size={80}
+              href="/Contact"
+            />
+            <Navigation
+              items={items}
+              itemClassName=" flex p-2 hover:text-(--primary-hover) bg-(--surface) rounded-lg text-(--text-primary) border border-(--border) transition duration-300 transform hover:scale-110"           />
+
+            {/* Notifications */}
+            {/* CTA */}
+          </header>
+          {children}
+          <footer>
+            {/* CTA Horizontal */}
+            {/*<HexCounter /> FIX COUNTER*/}
+            <Social urls={social} />
+            {/* Right Bottom */}
+            {/* Copy Write */}
+            <Chat />
+          </footer>
         </div>
       </body>
     </html>
